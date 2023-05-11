@@ -1,5 +1,6 @@
 const express= require('express');
 const mongoose = require('mongoose')
+const path=require("path");
 //fsjnd
 const cors = require('cors');
 const app = express();
@@ -8,6 +9,10 @@ app.use(cors());
 app.listen(4000);
 app.use(cors())
 const block=require('./Models/blocks');
+app.use(express.static(path.join(__dirname,"./POL_Frontend/build")));
+app.get("*",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./POL_Frontend/build/index.html"));
+})
 //const link="mongodb+srv://Lokya_Jadhav:Lokya-9985@cluster0.cz6ew.mongodb.net/POL_Database?retryWrites=true&w=majority"
 const link="mongodb://localhost:27017/POL_Database";
 mongoose.connect(link,{
