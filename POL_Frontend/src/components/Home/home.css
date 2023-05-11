@@ -1,0 +1,58 @@
+/* .objective-container, .algorithm-container
+{
+    font-weight: 600;
+}
+
+.objective, .alg-step
+{
+    list-style-type:disclosure-closed;
+}
+
+.objective-title, .alg-title
+{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.alg-pre-step
+{
+    list-style-type: disclosure-open;
+} */
+
+.home-container
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2rem;
+    padding: 3rem;
+    margin-bottom: 4rem;
+}
+
+.blockchainLinks
+{
+    list-style-type:circle;
+}
+
+.lsaGoals
+{
+    list-style-type:disclosure-closed;
+    line-height: 2rem;
+}
+
+.lsaMain
+{
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+p{
+    font-size: large;
+}
+
+.flowchart
+{
+    margin-left: auto;
+    margin-right: auto;
+}
